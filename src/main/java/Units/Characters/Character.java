@@ -9,8 +9,8 @@ public abstract class Character extends Unit{
     private ArrayList<Item> items;
     private Item activeItem;
 
-    public Character(String name, int health, int gold) {
-        super(name, health, gold);
+    public Character(String name, int health, int gold, boolean isEnemy) {
+        super(name, health, gold, isEnemy);
         this.activeItem = null;
         this.items = new ArrayList<Item>();
     }

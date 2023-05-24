@@ -9,7 +9,7 @@ public class TestMage {
 
     @Before
     public void setUp(){
-        mage = new Mage("Sky the Limit", 1000, 33 );
+        mage = new Mage("Sky the Limit", 1000, 33, false );
     }
 
     @Test

@@ -8,7 +8,7 @@ public class TestMagicalCreature {
 
     @Before
     public void setUp(){
-        mcDragon = new MythicalCreature("Colette the Collector of Skulls", 7434, 10 );
+        mcDragon = new MythicalCreature("Colette the Collector of Skulls", 7434, 10, true );
     }
 
     @Test

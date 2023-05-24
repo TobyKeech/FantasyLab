@@ -11,7 +11,7 @@ public class TestHealingItem {
     @Before
     public void setUp() {
         this.healingTool = new HealingItem("Keith's Loving Left Hand", 100);
-        this.fighter = new Fighter("Keith the Nonchalant", 100, 50);
+        this.fighter = new Fighter("Keith the Nonchalant", 100, 50, false);
 
     }
 

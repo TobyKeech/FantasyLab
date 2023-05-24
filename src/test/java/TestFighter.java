@@ -1,7 +1,7 @@
 import Items.Item;
 import Items.Weapon;
-import Units.Characters.Enemy;
 import Units.Characters.Fighter;
+import Units.Characters.Healer;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,13 +12,13 @@ public class TestFighter {
     Fighter fighter;
     Weapon weapon;
 
-    Enemy enemy;
+    Healer enemy;
 
     @Before
     public void setUp(){
-        this.fighter = new Fighter("Keith the Nonchalant", 100, 50);
+        this.fighter = new Fighter("Keith the Nonchalant", 100, 50, false);
         this.weapon = new Weapon("Keith's Righteous Right Hand", 50);
-        this.enemy = new Enemy("Shadow Keith", 1000, 500 );
+        this.enemy = new Healer("Shadow Keith", 1000, 500, true );
 
 
     }

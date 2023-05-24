@@ -12,7 +12,7 @@ public class TestSpell {
     @Before
     public void setUp() {
         this.spell = new Spell("Keith's Hypnotic Voice", 50, 0);
-        this.fighter = new Fighter("Keith the Nonchalant", 100, 50);
+        this.fighter = new Fighter("Keith the Nonchalant", 100, 50, false);
     }
 
 

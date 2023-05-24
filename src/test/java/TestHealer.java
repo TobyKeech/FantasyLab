@@ -10,7 +10,7 @@ public class TestHealer {
 
     @Before
     public void setUp(){
-        healer = new Healer("Mar Vellous", 5000, 2);
+        healer = new Healer("Mar Vellous", 5000, 2, false);
     }
     @Test
     public void hasName(){

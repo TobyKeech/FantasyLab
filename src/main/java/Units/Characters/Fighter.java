@@ -3,8 +3,8 @@ package Units.Characters;
 public class Fighter extends Character {
 
     private int armour;
-    public Fighter(String name, int health, int gold) {
-        super(name, health, gold);
+    public Fighter(String name, int health, int gold, boolean isEnemy) {
+        super(name, health, gold, isEnemy);
         this.armour = 5;
     }
 

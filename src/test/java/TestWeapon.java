@@ -1,5 +1,5 @@
 import Items.Weapon;
-import Units.Characters.Enemy;
+import Units.Characters.Healer;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -7,11 +7,11 @@ import static org.junit.Assert.assertEquals;
 
 public class TestWeapon {
     Weapon weapon;
-    Enemy enemy;
+    Healer enemy;
     @Before
     public void setUp() {
         this.weapon = new Weapon("Keith's Righteous Right Hand", 100000);
-        this.enemy = new Enemy("Shadow Keith", 600000 , 20000 );
+        this.enemy = new Healer("Shadow Keith", 600000 , 20000, true );
     }
 
     @Test

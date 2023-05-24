@@ -6,11 +6,17 @@ public abstract class Unit{
     private String name;
     private int health;
     private int gold;
+    private boolean isEnemy;
 
-    public Unit(String name, int health, int gold){
+    public Unit(String name, int health, int gold, boolean isEnemy){
         this.name = name;
         this.health = health;
         this.gold = gold;
+        this.isEnemy = isEnemy;
+    }
+
+    public boolean isEnemy() {
+        return isEnemy;
     }
 
     public String getName() {
