@@ -1,8 +1,6 @@
-package Units.BadGuys;
+package Units.Characters;
 
-import Units.Unit;
-
-public class Enemy extends Unit {
+public class Enemy extends Character {
 
     public Enemy(String name, int health, int gold) {
         super(name, health, gold);

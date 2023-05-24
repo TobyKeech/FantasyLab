@@ -1,5 +1,4 @@
-import Units.Players.Fighter;
-import Units.Players.Mage;
+import Units.Characters.Mage;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 package Units;
 
-public abstract class Unit {
+public abstract class Unit{
     private String name;
     private int health;
     private int gold;
@@ -33,5 +33,9 @@ public abstract class Unit {
 
     public void setGold(int gold) {
         this.gold = gold;
+    }
+
+    public void wound(int damage) {
+        this.setHealth(this.getHealth() - damage);
     }
 }

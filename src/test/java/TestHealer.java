@@ -1,4 +1,4 @@
-import Units.Players.Healer;
+import Units.Characters.Healer;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,5 +1,4 @@
 import Units.MythicalCreature;
-import Units.Players.Mage;
 import org.junit.Before;
 import org.junit.Test;
 

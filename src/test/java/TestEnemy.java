@@ -1,5 +1,4 @@
-import Units.BadGuys.Enemy;
-import Units.Players.Fighter;
+import Units.Characters.Enemy;
 import org.junit.Before;
 import org.junit.Test;
 
