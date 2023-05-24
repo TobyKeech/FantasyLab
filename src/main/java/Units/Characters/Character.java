@@ -35,5 +35,13 @@ public abstract class Character extends Unit{
         return items;
     }
 
+    @Override
+    public void act(Unit target) {
+        if (this.activeItem == null) {
+            super.act(target);
+        } else {
+            this.getActiveItem().useOnTarget(target);
+        }
+    }
 
 }

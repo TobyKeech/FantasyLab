@@ -1,5 +1,7 @@
 package Units;
 
+import java.lang.annotation.Target;
+
 public abstract class Unit{
     private String name;
     private int health;
@@ -45,5 +47,9 @@ public abstract class Unit{
 
     public void modifyHealth(int healthModifier){
         this.setHealth(this.getHealth() + healthModifier);
+    }
+
+    public void act( Unit target){
+        target.wound(2);
     }
 }

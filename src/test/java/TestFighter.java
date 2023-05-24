@@ -1,5 +1,6 @@
 import Items.Item;
 import Items.Weapon;
+import Units.Characters.Enemy;
 import Units.Characters.Fighter;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,10 +12,14 @@ public class TestFighter {
     Fighter fighter;
     Weapon weapon;
 
+    Enemy enemy;
+
     @Before
     public void setUp(){
-        this.fighter = new Fighter("Keith the Nonchalant", 100, 50 );
-        this.weapon = new Weapon("Keith's Righteous Right Hand", 999999999);
+        this.fighter = new Fighter("Keith the Nonchalant", 100, 50);
+        this.weapon = new Weapon("Keith's Righteous Right Hand", 50);
+        this.enemy = new Enemy("Shadow Keith", 1000, 500 );
+
 
     }
 
@@ -49,7 +54,7 @@ public class TestFighter {
     @Test
     public void canBeWounded() {
         this.fighter.wound(10);
-        assertEquals(90, this.fighter.getHealth());
+        assertEquals(95, this.fighter.getHealth());
     }
 
     @Test
@@ -68,6 +73,25 @@ public class TestFighter {
     public void canBeDamagedBySpell(){
         this.fighter.modifyHealth(-5);
         assertEquals(95,this.fighter.getHealth());
+    }
+    @Test
+    public void canWhackOtherGuy(){
+        this.fighter.act(enemy);
+        assertEquals(998,this.enemy.getHealth());
+    }
+
+    @Test
+    public void canWhackWithItem(){
+        this.fighter.addItem(weapon);
+        this.fighter.setActiveItem(0);
+        this.fighter.act(enemy);
+        assertEquals(950, this.enemy.getHealth());
+    }
+
+    @Test
+    public void armourDoesItsJob(){
+        this.enemy.act(fighter);
+        assertEquals(100, this.fighter.getHealth());
     }
 
 }
