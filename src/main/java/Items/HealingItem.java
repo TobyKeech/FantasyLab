@@ -16,6 +16,8 @@ public class HealingItem extends Item {
 
     @Override
     public void useOnTarget(Unit target) {
-
+        target.heal(this.healingPower);
     }
+
+
 }

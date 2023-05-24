@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 public class TestFighter {
     Fighter fighter;
@@ -50,4 +51,23 @@ public class TestFighter {
         this.fighter.wound(10);
         assertEquals(90, this.fighter.getHealth());
     }
+
+    @Test
+    public void canBeHealed(){
+        this.fighter.heal(5);
+        assertEquals(105, this.fighter.getHealth());
+    }
+
+    @Test
+    public void canBeHealedBySpell(){
+        this.fighter.modifyHealth(5);
+        assertEquals(105,this.fighter.getHealth());
+    }
+
+    @Test
+    public void canBeDamagedBySpell(){
+        this.fighter.modifyHealth(-5);
+        assertEquals(95,this.fighter.getHealth());
+    }
+
 }

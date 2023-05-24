@@ -38,4 +38,12 @@ public abstract class Unit{
     public void wound(int damage) {
         this.setHealth(this.getHealth() - damage);
     }
+
+    public void heal(int healingAmount){
+        this.setHealth(this.getHealth() + healingAmount);
+    }
+
+    public void modifyHealth(int healthModifier){
+        this.setHealth(this.getHealth() + healthModifier);
+    }
 }

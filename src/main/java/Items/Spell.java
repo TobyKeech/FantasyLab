@@ -22,6 +22,7 @@ public class Spell extends Item {
 
     @Override
     public void useOnTarget(Unit target) {
+        target.modifyHealth(this.hpModifier);
 
     }
 }
