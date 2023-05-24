@@ -1,6 +1,5 @@
 public class FantasyGame {
-
-    public FantasyGame(){
+    public static void main(String[] args) {
 
     }
 }

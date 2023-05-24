@@ -1,12 +1,14 @@
-package Players;
+package Units;
 
-public abstract class Player {
+public abstract class Unit {
     private String name;
     private int health;
+    private int gold;
 
-    public Player(String name, int health){
+    public Unit(String name, int health, int gold){
         this.name = name;
         this.health = health;
+        this.gold = gold;
     }
 
     public String getName() {
@@ -23,5 +25,13 @@ public abstract class Player {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    public int getGold(){
+        return this.gold;
+    }
+
+    public void setGold(int gold) {
+        this.gold = gold;
     }
 }
